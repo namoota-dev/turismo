@@ -40,3 +40,11 @@ a {
     color-scheme: dark;
   }
 }
+
+#navbarTop {
+  background-color: #f9f5f2;
+}
+
+.bg-green {
+  background-color: #007c49 !important;
+}
