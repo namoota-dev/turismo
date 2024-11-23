@@ -22,7 +22,7 @@ export default function Home() {
         <Container>
           <h1 className="display-4">Discover the World with Turismo</h1>
           <p className="lead">Tailored tours, unforgettable experiences, and destinations to cherish forever.</p>
-          <Button variant="light" href="#services">Explore Tours</Button>
+          <Button variant="light" href="tours">Explore Tours</Button>
         </Container>
       </section>
 
