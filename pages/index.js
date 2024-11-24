@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form, Image } from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-green text-white text-center py-5">
+      <section id="heroSection" className="bg-green text-white text-center py-5">
         <Container>
           <h1 className="display-4">Discover the World with Turismo</h1>
           <p className="lead">Tailored tours, unforgettable experiences, and destinations to cherish forever.</p>
@@ -65,34 +65,25 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Featured Destinations Section */}
-      <section id="destinations" className="bg-light py-5">
+      {/* Tour Planners Section */}
+      <section id="tourPlanners" className="bg-light py-5">
         <Container>
-          <h2 className="text-center mb-4">Featured Destinations</h2>
+          <h2 className="text-center mb-4">Meet Our Tour Planners</h2>
           <Row>
-            <Col md={4}>
-              <Card>
-                <Card.Img variant="top" src="/images/destination1.jpeg" />
-                <Card.Body>
-                  <Card.Title>Paris, France</Card.Title>
-                </Card.Body>
-              </Card>
+            <Col md={4} className="text-center">
+              <Image src="/images/lungi.png" roundedCircle fluid style={{ width: '150px', height: '150px' }} />
+              <h5 className="mt-3">Lungi Mdletshe</h5>
+              <p>Adventure Specialist</p>
             </Col>
-            <Col md={4}>
-              <Card>
-                <Card.Img variant="top" src="/images/destination2.jpg" />
-                <Card.Body>
-                  <Card.Title>Cape Town, South Africa</Card.Title>
-                </Card.Body>
-              </Card>
+            <Col md={4} className="text-center">
+              <Image src="/images/gwen.png" roundedCircle fluid style={{ width: '150px', height: '150px' }} />
+              <h5 className="mt-3">Gwen Lotter</h5>
+              <p>Luxury & Safari Specialist</p>
             </Col>
-            <Col md={4}>
-              <Card>
-                <Card.Img variant="top" src="/images/destination3.jpg" />
-                <Card.Body>
-                  <Card.Title>Tokyo, Japan</Card.Title>
-                </Card.Body>
-              </Card>
+            <Col md={4} className="text-center">
+              <Image src="/images/zweli.png" roundedCircle fluid style={{ width: '150px', height: '150px' }} />
+              <h5 className="mt-3">Zweli Mthethwa</h5>
+              <p>Cultural Tour Specialist</p>
             </Col>
           </Row>
         </Container>

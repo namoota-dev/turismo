@@ -48,3 +48,6 @@ a {
 .bg-green {
   background-color: #007c49 !important;
 }
+#heroSection {
+  background: url("/images/banner1.jpg");
+}
