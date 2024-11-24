@@ -32,7 +32,7 @@ export default function Home() {
           <h2 className="text-center mb-4">Our Services</h2>
           <Row>
             <Col md={4}>
-              <Card>
+              <Card className="service-card">
                 <Card.Body>
                   <Card.Title>Custom Tours</Card.Title>
                   <Card.Text>
@@ -42,7 +42,7 @@ export default function Home() {
               </Card>
             </Col>
             <Col md={4}>
-              <Card>
+              <Card className="service-card">
                 <Card.Body>
                   <Card.Title>Travel Assistance</Card.Title>
                   <Card.Text>
@@ -52,7 +52,7 @@ export default function Home() {
               </Card>
             </Col>
             <Col md={4}>
-              <Card>
+              <Card className="service-card">
                 <Card.Body>
                   <Card.Title>Local Experiences</Card.Title>
                   <Card.Text>
