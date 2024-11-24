@@ -13,7 +13,7 @@ const activities = [
     duration: "Breakfast + 2-hour cultural tour",
     provider: "Veyane Cultural Village or Isibindi Africa Lodges",
     suggestedLocation: "LoveRSA Cafe",
-    image: "/images/theotours.jpg",
+    image: "/images/theotours.png",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const activities = [
       "Spot over 500 bird species in iSimangaliso or False Bay Nature Reserve, including fish eagles and pink-backed pelicans.",
     duration: "2–3 hours",
     provider: "St. Lucia Birding Tours",
-    image: "/images/stlucia-bird-tours.avif",
+    image: "/images/birding.png",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const activities = [
       "Enjoy a guided boat tour on the St. Lucia Estuary to see hippos and Nile crocodiles up close in the largest estuarine system in Africa.",
     duration: "2 hours",
     provider: "Advantage Tours or St. Lucia Eco Lodge & Conference Centre",
-    image: "/images/hippocroc.jpg",
+    image: "/images/hippocroc.png",
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const activities = [
       "Explore iSimangaliso Wetland Park with a guided safari tour. Catch the Big Five in their natural morning routines.",
     duration: "3–4 hours",
     provider: "Bhangazi Horse Safari or Shoreline Safaris",
-    image: "/images/safari.jpg",
+    image: "/images/safari.png",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const activities = [
       "Enjoy scenic trails at Cape Vidal with opportunities to spot marine life, antelope, and birds. Trails range from easy to moderate.",
     duration: "2–3 hours",
     provider: "Mission Rocks or Kosi Bay",
-    image: "/images/hiking.jpg",
+    image: "/images/hiking.png",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const activities = [
       "Set sail on a deep-sea fishing adventure off Cape Vidal to catch barracuda, kingfish, and more.",
     duration: "3–4 hours",
     provider: "Big Fish St. Lucia or St. Lucia Fishing Adventures",
-    image: "/images/fishing.jpg",
+    image: "/images/fishing.png",
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const activities = [
       "Discover clear waters near Cape Vidal, perfect for spearfishing enthusiasts or snorkelers seeking marine life encounters.",
     duration: "2–3 hours",
     provider: "Kosi Bay Spearfishing or specialized spearfishing charters",
-    image: "/images/snorkeling.jpg",
+    image: "/images/snorkelling.png",
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ const activities = [
       "Explore iSimangaliso’s bike trails along breathtaking coastal and forest routes.",
     duration: "1.5–2 hours",
     provider: "Local tour companies or lodges",
-    image: "/images/bicycle.jpg",
+    image: "/images/bicycle.png",
   },
 ];
 
