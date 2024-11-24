@@ -1,9 +1,13 @@
 import Head from 'next/head';
-import { Container, Row, Col, Card, Button, Form, Image } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form, Image, Carousel } from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function Home() {
+  const styles = {
+    color: "#83c057",
+  };
+
   return (
     <div>
       <Head>
@@ -12,7 +16,7 @@ export default function Home() {
           name="description"
           content="Discover unforgettable travel experiences with Turismo, your partner for tailored tourism adventures."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.jpeg" />
       </Head>
 
       <Header />
@@ -29,12 +33,12 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-5">
         <Container>
-          <h2 className="text-center mb-4">Our Services</h2>
+          <h2 style={{ color: "#83c057" }} className="text-center mb-4 display-6 header-text">Our Services</h2>
           <Row>
             <Col md={4}>
               <Card className="service-card">
                 <Card.Body>
-                  <Card.Title>Custom Tours</Card.Title>
+                  <Card.Title className="header-text display-6">Custom Tours</Card.Title>
                   <Card.Text>
                     Personalized travel experiences that fit your unique preferences and schedule.
                   </Card.Text>
@@ -44,7 +48,7 @@ export default function Home() {
             <Col md={4}>
               <Card className="service-card">
                 <Card.Body>
-                  <Card.Title>Travel Assistance</Card.Title>
+                  <Card.Title className="header-text display-6">Travel Assistance</Card.Title>
                   <Card.Text>
                     24/7 support from our team to make your travel seamless and stress-free.
                   </Card.Text>
@@ -54,7 +58,7 @@ export default function Home() {
             <Col md={4}>
               <Card className="service-card">
                 <Card.Body>
-                  <Card.Title>Local Experiences</Card.Title>
+                  <Card.Title className="header-text display-6">Local Experiences</Card.Title>
                   <Card.Text>
                     Immerse yourself in authentic local cultures with expert guides.
                   </Card.Text>
@@ -68,7 +72,7 @@ export default function Home() {
       {/* Tour Planners Section */}
       <section id="tourPlanners" className="bg-light py-5">
         <Container>
-          <h2 className="text-center mb-4">Meet Our Tour Planners</h2>
+          <h2 className="text-center mb-4 header-text display-6">Meet Our Tour Planners</h2>
           <Row>
             <Col md={4} className="text-center">
               <Image src="/images/lungi.png" roundedCircle fluid style={{ width: '150px', height: '150px' }} />
@@ -92,27 +96,62 @@ export default function Home() {
       {/* Testimonials Section */}
       <section id="testimonials" className="py-5">
         <Container>
-          <h2 className="text-center mb-4">What Our Clients Say</h2>
-          <Row>
-            <Col md={6}>
-              <Card>
-                <Card.Body>
-                  <Card.Text>
-                    "Turismo planned the perfect honeymoon for us. We’ll cherish these memories forever."
-                  </Card.Text>
-                  <Card.Footer>- Emily R.</Card.Footer>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6}>
-              <Card>
-                <Card.Body>
-                  <Card.Text>
-                    "Their guides were fantastic, and the custom itinerary made all the difference."
-                  </Card.Text>
-                  <Card.Footer>- Alex K.</Card.Footer>
-                </Card.Body>
-              </Card>
+          <h2 className="text-center mb-4 header-text display-6">What Our Clients Say</h2>
+          <Row className="justify-content-center">
+            <Col md={8}>
+              <Carousel>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <p className="lead font-italic mx-4 mx-md-5">
+                      "Turismo helped me plan my dream vacation effortlessly. The itinerary was perfect, and the experience was unforgettable."
+                    </p>
+                    <div className="mt-5 mb-4">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                        className="rounded-circle img-fluid shadow"
+                        alt="sample image"
+                        width="100"
+                        height="100"
+                      />
+                    </div>
+                    <p className="text-muted mb-0">- Anna Morian</p>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <p className="lead font-italic mx-4 mx-md-5">
+                      "The customer service was exceptional, and the tours were well-organized. I'll definitely book with Turismo again!"
+                    </p>
+                    <div className="mt-5 mb-4">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+                        className="rounded-circle img-fluid shadow"
+                        alt="sample image"
+                        width="100"
+                        height="100"
+                      />
+                    </div>
+                    <p className="text-muted mb-0">- Teresa May</p>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <p className="lead font-italic mx-4 mx-md-5">
+                      "Thanks to Turismo, my family and I had the most incredible holiday experience. Every detail was taken care of!"
+                    </p>
+                    <div className="mt-5 mb-4">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                        className="rounded-circle img-fluid shadow"
+                        alt="sample image"
+                        width="100"
+                        height="100"
+                      />
+                    </div>
+                    <p className="text-muted mb-0">- Kate Allise</p>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
             </Col>
           </Row>
         </Container>
