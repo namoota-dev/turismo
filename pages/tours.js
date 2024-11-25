@@ -89,14 +89,14 @@ const Tours = () => {
           name="description"
           content="Discover unforgettable travel experiences with Turismo, your partner for tailored tourism adventures."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.jpeg" />
       </Head>
 
       <Header />
    
     <div style={{ minHeight: "100vh", backgroundColor: "#eafaf1", padding: "40px 0" }}>
       <Container>
-        <h1 className="text-center mb-5" style={{ color: "#2d6a4f" }}>
+        <h1 className="text-center mb-5 display-6 header-text" style={{ color: "#2d6a4f" }}>
           Discover Our Tour Packages
         </h1>
         <Row className="justify-content-center">
@@ -112,7 +112,7 @@ const Tours = () => {
               <Card style={{ width: "18rem", boxShadow: "0 4px 6px rgba(0,0,0,0.1)" }}>
                 <Card.Img variant="top" src={activity.image} />
                 <Card.Body>
-                  <Card.Title style={{ color: "#1b4332" }}>{activity.title}</Card.Title>
+                  <Card.Title className="header-text">{activity.title}</Card.Title>
                   <Card.Text className="text-muted">{activity.description}</Card.Text>
                   <Card.Text>
                     <strong>Duration:</strong> {activity.duration}
@@ -122,7 +122,7 @@ const Tours = () => {
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer className="text-center">
-                  <Button variant="success">Book Now</Button>
+                  <Button className="bg-green book-now-btn">Enquire Now</Button>
                 </Card.Footer>
               </Card>
             </Col>

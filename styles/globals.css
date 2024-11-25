@@ -58,6 +58,9 @@ a {
   background: url("/images/banner1.jpg");
 }
 
+.book-now-btn {
+  border-color: var(--green) !important;
+}
 @media only screen and (max-width: 800px) {
   .service-card {
     margin-bottom: 15px;
