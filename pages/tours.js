@@ -14,6 +14,8 @@ const activities = [
     provider: "Veyane Cultural Village or Isibindi Africa Lodges",
     suggestedLocation: "LoveRSA Cafe",
     image: "/images/theotours.png",
+    priceAdults: 520,
+    priceChildren: 410,
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ const activities = [
     duration: "2–3 hours",
     provider: "St. Lucia Birding Tours",
     image: "/images/birding.png",
+    priceAdults: 850,
+    priceChildren: 850,
   },
   {
     id: 3,
@@ -32,6 +36,8 @@ const activities = [
     duration: "2 hours",
     provider: "Advantage Tours or St. Lucia Eco Lodge & Conference Centre",
     image: "/images/hippocroc.png",
+    priceAdults: 700,
+    priceChildren: 700,
   },
   {
     id: 4,
@@ -41,6 +47,8 @@ const activities = [
     duration: "3–4 hours",
     provider: "Bhangazi Horse Safari or Shoreline Safaris",
     image: "/images/safari.png",
+    priceAdults: 1660,
+    priceChildren: 1660,
   },
   {
     id: 5,
@@ -50,6 +58,8 @@ const activities = [
     duration: "2–3 hours",
     provider: "Mission Rocks or Kosi Bay",
     image: "/images/hiking.png",
+    priceAdults: 800,
+    priceChildren: 800,
   },
   {
     id: 6,
@@ -59,6 +69,8 @@ const activities = [
     duration: "3–4 hours",
     provider: "Big Fish St. Lucia or St. Lucia Fishing Adventures",
     image: "/images/fishing.png",
+    priceAdults: 2100,
+    priceChildren: 2100,
   },
   {
     id: 7,
@@ -68,6 +80,8 @@ const activities = [
     duration: "2–3 hours",
     provider: "Kosi Bay Spearfishing or specialized spearfishing charters",
     image: "/images/snorkelling.png",
+    priceAdults: 680,
+    priceChildren: 680,
   },
   {
     id: 8,
@@ -77,6 +91,8 @@ const activities = [
     duration: "1.5–2 hours",
     provider: "Local tour companies or lodges",
     image: "/images/bicycle.png",
+    priceAdults: 850,
+    priceChildren: 850,
   },
 ];
 
@@ -120,6 +136,12 @@ const Tours = () => {
                   <Card.Text>
                     <strong>Provider:</strong> {activity.provider}
                   </Card.Text>
+                  <Card.Text>
+                      <strong>Price (Adults):</strong> ZAR {activity.priceAdults}
+                    </Card.Text>
+                    <Card.Text>
+                      <strong>Price (Children):</strong> ZAR {activity.priceChildren}
+                    </Card.Text>
                 </Card.Body>
                 <Card.Footer className="text-center">
                   <Button className="bg-green book-now-btn">Enquire Now</Button>
