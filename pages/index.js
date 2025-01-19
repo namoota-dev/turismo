@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { Container, Row, Col, Card, Button, Form, Image, Carousel } from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ContactForm from '@/components/Contact-form';
+
 
 export default function Home() {
   const styles = {
@@ -156,26 +158,7 @@ export default function Home() {
           </Row>
         </Container>
       </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="bg-green text-white py-5">
-        <Container>
-          <h2 className="text-center mb-4">Contact Us</h2>
-          <Form className="mx-auto" style={{ maxWidth: '600px' }}>
-            <Form.Group className="mb-3" controlId="name">
-              <Form.Control type="text" placeholder="Your Name" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="email">
-              <Form.Control type="email" placeholder="Your Email" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="message">
-              <Form.Control as="textarea" rows={3} placeholder="Your Message" />
-            </Form.Group>
-            <Button type="submit" variant="light">Send Message</Button>
-          </Form>
-        </Container>
-      </section>
-
+      <ContactForm />
       <Footer />
     </div>
   );
